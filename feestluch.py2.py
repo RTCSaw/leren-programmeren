@@ -9,6 +9,7 @@ aantal_kortingsbonnen = int(input (" (Hoeveel kortingsbonnen heeft u?"))
 korting = int(input ("hoeveel cent zijn ze waard?"))
 korting_totaal = aantal_kortingsbonnen * korting / 100
 
-totaal= stokbrTotaal + croistotaal - korting_totaal
+totaaleuro= stokbrTotaal + croistotaal - korting_totaal
+totaalcent =totaaleuro * 100
 
-print(f"De feestlunch kost je bij de bakker {totaal} euro voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!")
+print(f"De feestlunch kost je bij de bakker {totaalcent} cent voor de 17 croissantjes en de 2 stokbroden als de 3 kortingsbonnen nog geldig zijn!")

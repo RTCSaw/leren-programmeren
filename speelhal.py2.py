@@ -14,5 +14,6 @@ print("Totale kosten Virtual reality:", {totalvrcost})
 print("Kosten toegang gamehall: ", ticketkosten)
 TotalCost = totalvrcost + ticketkosten
 afgrondtotaal= round (TotalCost,2)
-print("de totalen kosten voor de gamehall is ", {afgrondtotaal})
-print("Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar" ,{afgrondtotaal})
+afgerondcent = afgrondtotaal * 100
+print("de totalen kosten voor de gamehall is ", {afgerondcent})
+print("Dit geweldige dagje-uit met 4 mensen in de Speelhal met 45 minuten VR kost je maar" ,{afgerondcent})

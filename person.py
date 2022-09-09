@@ -10,5 +10,5 @@ print(f''' ----------------------------------------------------
 |  Naam      : {inputnaam}                
 |  Adres     : {inputadress}           
 |  Postcode  : {inputpostcode}                      
-|  Woonplaats: {inputwoonplaats}                          
+|  Woonplaats: {inputwoonplaats}                           
  ----------------------------------------------------''')
