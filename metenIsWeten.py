@@ -5,15 +5,15 @@ if b > a:
 
   max = b
   min = a
-  print("b is groter dan a met een waarde van ", max,"tegen", min)
+  print("het minimum is ",a , "Het maximum is",b)
 
 elif a == b:
-  print("a and b are equal")
+  print("a en b zijn even veel waard")
 else:
   
   print("a is greater than b")
   max = a
   min = b
 
-  print("a is groter dan b met een waarde van ", max,"tegen", min)
+  print("het minimum is ", b, " en het maximum is", a)
   
