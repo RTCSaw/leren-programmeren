@@ -6,9 +6,29 @@ pizza_middel =  10.99
 pizza_groot =   12.99
 
 # hier heb ik een user input toegevoegd om de persoon te laten bepalen hoeveel kleine, mmiddengrote en grote pizzas de persoon wilt bestellen
-pizza_klein_input = int (input ("Aantal kleine pizza's 26cm : "))
-pizza_middel_input = int (input("Aantal middel pizza's 30cm : "))
-pizza_groot_input = int (input("Aantal grote pizza's 35 cm: "))
+while True:
+    try:
+        pizza_klein_input = int(input("Hoeveel small pizza's?: "))
+        break
+    except:
+        print("Dat is geen aantal in nummers!")
+ 
+while True:
+    try: 
+        pizza_middel_input = int (input("Aantal middel pizza's 30cm : "))
+        break
+    except:
+        print("Dat is geen aantal in nummers!")
+
+
+while True:
+    try:
+       pizza_groot_input = int (input("Aantal grote pizza's 35 cm: "))
+       break
+    except:
+        print("Dat is geen getal in nummers")
+
+
 
 #hieronder wordt verwerkt dat het input van de user keer de prijs van de kleine,.....
 pizza_klein_totaal = pizza_klein_input * 5.99

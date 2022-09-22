@@ -32,6 +32,7 @@ elif geel == "ja":
      steen = input("is de kaas zo hard als steen? ")
      if steen == "ja":
         print("parmigiano Reggiano")
+        
      elif steen == "nee":
         print("Goudse Kaas")
     
