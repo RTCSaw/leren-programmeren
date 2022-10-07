@@ -1,1 +1,0 @@
-print ("chipies, balen, verdorie")
