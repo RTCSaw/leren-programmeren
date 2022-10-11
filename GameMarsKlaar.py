@@ -14,7 +14,7 @@ def delay_print(string):
     for char in string:
         sys.stdout.write(char)     
         sys.stdout.flush()
-        time.sleep(0.03)
+        time.sleep(0.00)
 
     
    
