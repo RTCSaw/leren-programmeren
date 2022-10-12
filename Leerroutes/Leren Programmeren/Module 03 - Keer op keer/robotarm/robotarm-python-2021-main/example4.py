@@ -13,16 +13,14 @@ for x in range(5):
     for q in range(2):
         robotArm.moveRight()
     robotArm.drop()
-    for q in range(2):
-        robotArm.moveLeft()
-
-robotArm.moveRight()
+    if x < 4:
+        for q in range(2):
+            robotArm.moveLeft()
 
 for g in range(5):
-    robotArm.moveRight()
     robotArm.grab()
     robotArm.moveLeft()
     robotArm.drop()
-
+    robotArm.moveRight()
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()
