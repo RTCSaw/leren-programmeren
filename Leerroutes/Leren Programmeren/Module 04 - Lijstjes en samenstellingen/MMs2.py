@@ -1,6 +1,6 @@
 import random
 kleuren = ("groen", "blauw","oranje","bruin")
-# hoeveel = int(input("hoeveel mms wil je?"))
+hoeveel = int(input("hoeveel mms wil je?"))
 bowl ={} 
 while True:
     try:

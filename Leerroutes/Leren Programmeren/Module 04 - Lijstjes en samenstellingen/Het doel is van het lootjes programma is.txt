@@ -1,0 +1,27 @@
+Het doel is van het lootjes programma is:
+
+Het doel is dat je lootjes kan verdelen over namen die in de
+input worden gegeven. Alle lootjes zullen worden geshuffeld en niemand zal een lootje krijgen met eigen naam.
+
+Start programma
+herhaal 
+    input voor naam
+    is nieuwe naam uniek?
+    ja? voeg naam toe 
+    Als er 3 of meer namen zijn ingevoerd:
+        wilt u nog een naam toevoegen?
+        Als nee is dan stopt de herhaling
+
+herhaal:
+    shuffle alle lootjes
+    herhaal: voor alle lootjes
+        vergelijk met namen zodat geen eigen lootje uitgedeeld wordt
+    als niemand eigen loohtje heeft gekregen dan stop herhaling
+
+
+alle lootjes zijn nu geshuffeld.
+print alle namen + alle lootjes.
+
+einde programma 
+
+

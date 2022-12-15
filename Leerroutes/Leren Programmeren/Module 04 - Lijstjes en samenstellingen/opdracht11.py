@@ -2,11 +2,9 @@ from fruitmand import fruitmand
 
 kleuren =[]                                                #lege list die later gevult wordt.                                    
 
-for kleur_input in fruitmand:                              #hier worden alle kleuren toegevoegd aan de lege list kleuren.
-    if kleur_input['color'] not in kleuren:
-        kleuren.append(kleur_input['color'])
-    elif kleur_input in kleuren:
-        pass
+for kleur in fruitmand:                              #hier worden alle kleuren toegevoegd aan de lege list kleuren.
+    if kleur['color'] not in kleuren:
+        kleuren.append(kleur['color'])
 
 while True:
     kleur_input = (input("Welke kleur wil je? "))           # hier wordt de kleur gevraagd.
@@ -29,4 +27,4 @@ for x in range(len(fruitmand)):                             # for loop van de le
             rond -=1 
             niet_rond +=1
 
-print(f"{rond} rond, {niet_rond} niet rond, {wel_rond} wel rond")       #print de line met info
+print(f" {niet_rond} niet rond, {wel_rond} wel rond")       #print de line met info

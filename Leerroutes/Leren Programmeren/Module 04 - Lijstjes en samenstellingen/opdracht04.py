@@ -3,5 +3,5 @@ import random
 
 aantal = int(input("Hoeveel fruit wil je pakken? "))
 for x in range(0, aantal):
-    max = random.randint(0, len(fruitmand) - 1)
-    print(fruitmand[max]['name'])
+    random_fruit = random.choice(fruitmand)
+    print(random_fruit['name'])

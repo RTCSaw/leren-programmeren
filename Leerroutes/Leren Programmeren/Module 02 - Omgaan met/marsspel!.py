@@ -12,9 +12,6 @@ def delay_print(string):
         sys.stdout.flush()
         time.sleep(0.03)
 
-
-
-
    #print one character at a time
 def delay_input(string):
     for char in string:
