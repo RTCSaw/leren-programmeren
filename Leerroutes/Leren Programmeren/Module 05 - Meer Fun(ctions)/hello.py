@@ -1,4 +1,5 @@
-def greet():
-    print("hello from function town")
+def greet(end):
+    for x in range(1, end+1):
+        print("hello from function town")
 
-greet()
+greet(2)
