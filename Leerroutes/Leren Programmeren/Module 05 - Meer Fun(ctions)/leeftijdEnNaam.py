@@ -6,7 +6,8 @@ def naam_en_leeftijd():
             break
         leeftijd = int(input(f"Hoe oud is {naam} "))
         gegevens_lijst.append((naam, leeftijd))
-        
+        if leeftijd == "stop":
+            break        
     for naam, leeftijd in gegevens_lijst:
         print(f"{naam} is {leeftijd} jaar")
 

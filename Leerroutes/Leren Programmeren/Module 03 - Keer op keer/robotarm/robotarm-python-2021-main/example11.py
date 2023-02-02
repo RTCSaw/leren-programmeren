@@ -8,10 +8,10 @@ for x in range(q):
     color = robotArm.scan()
     if robotArm._color == "white":
         robotArm.moveRight()
-        q -=2
+        q -=3
         
     robotArm.drop()
     robotArm.moveRight()
-    q-=2
+    q-=3
 # Na jouw code wachten tot het sluiten van de window:
 robotArm.wait()

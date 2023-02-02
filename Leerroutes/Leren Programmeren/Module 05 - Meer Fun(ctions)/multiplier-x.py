@@ -1,6 +1,7 @@
-def multiplier(getal):
-    x=1
-    for y in range(0,10):
-        print(f"{getal} x {x} =",(getal*x))
-        x+=1         
-multiplier(7)
+def multiplier(para):
+
+    for y in range(0,11):
+        print(f"{para} x {y} =",(para*y))
+
+aantal = int(input("tafel? "))
+multiplier(aantal)

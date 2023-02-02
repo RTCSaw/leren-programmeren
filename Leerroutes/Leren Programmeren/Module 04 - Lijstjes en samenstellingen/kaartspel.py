@@ -11,9 +11,9 @@ for x in soorten_kaarten:
 deck.append("jokerZ")
 deck.append("jokerR")
 random.shuffle(deck)
-print(deck)
+# print(deck)
 for x in range(7):
-    print (x +1 , deck[0])
+    print (x +1, deck[0])
     deck.pop(0)   
 print(deck)
 
