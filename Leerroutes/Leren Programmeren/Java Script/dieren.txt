@@ -1,0 +1,7 @@
+dieren = {giraffe : { poten : 4}, struisvogel : {poten : 2 }, zebra : {poten : 4}}
+let poten = prompt("Voer een getal in:");
+
+
+
+
+
