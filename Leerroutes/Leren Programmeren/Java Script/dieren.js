@@ -1,15 +1,12 @@
-function aantal_dieren ()
-{
-    let aantal_dieren = prompt("hoeveel dieren?");
-    dieren = {giraffe : { poten : 4}, struisvogel : {poten : 2 }, zebra : {poten : 4}}
-    for (['dier'] = 0; [poten] = poten ; ++1) {
-        totaal = aantal_poten * ['poten']
-      }
+
+function bereken_poten(aantal_giraffen, aantal_struisvogels, aantal_zebras) {
+    const poten_giraffe = 4;
+    const poten_struisvogel = 2;
+    const poten_zebra = 4;
     
-    console.log(totaal)
-};
-aantal_dieren()
-
-
-
-
+    const totaal_poten = (aantal_giraffen * poten_giraffe) + (aantal_struisvogels * poten_struisvogel) + (aantal_zebras * poten_zebra);
+    return totaal_poten;
+  }
+  
+  const totaal_poten = bereken_poten(5,5,5);
+  console.log(`Het totale aantal poten is ${totaal_poten}`);
