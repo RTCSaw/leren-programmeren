@@ -9,11 +9,13 @@ while (loop) {
 
     }else if (drinken == "stop"){
         loop = false 
-
-    }else{
+    }
+    else if (drinken in boodschappen){
+        boodschappen[drinken]+= aantal
+    }
+    else{
         console.log("dit ken ik niet... probeer iets anders")
     }
-    
 };
 for (key in boodschappen){
     console.log(boodschappen[key])

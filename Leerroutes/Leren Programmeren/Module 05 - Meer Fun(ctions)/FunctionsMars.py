@@ -49,11 +49,6 @@ def launch ():
         aftellen10()
     print(lift_off)
 
-    print("ER GAAT EEN ALARM AF OP HET DASHBORD!!! HOUSTEN WE GOT A PROBLEM!! 'MASTER WARNING, MASTER WARNING, MASTER WARNING")
-    time.sleep(2)
-    print(explosie)
-    print("De raket is ontploft, iedereen aan boord is gesneuveld....")
-    exit()
 ######################################################################################################################################################################################################################################
 # hier wordt de eerste som gegevraagd
 def latitude():
@@ -132,7 +127,7 @@ def Alien_battle():
         raket_leven = raket_leven - alien_damage
         print(f"WE HEBBEN GEMIST EN WE ZIJN GERAAKT!!! WE HEBBEN NOG {raket_leven} hp over")
 #########################################################################################################################################################################################################################################
-def Zuurstof():
+def zuurstof():
   num1zuurstof = random.randint(1,3)
   num2brandstof = random.randint(1,5)
   while True:

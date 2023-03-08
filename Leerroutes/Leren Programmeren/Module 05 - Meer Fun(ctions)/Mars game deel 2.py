@@ -15,7 +15,7 @@ Bereken hoeveel je nodig hebt in de volgende stage voor liftoff
 LET OP! MAAK GEEN FOUTEN''')
 
 time.sleep(2)
-
+zuurstof()
 launch()
 aftellen10()
 time.sleep(1)
