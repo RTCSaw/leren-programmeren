@@ -18,7 +18,7 @@ time.sleep(2)
 zuurstof()
 launch()
 aftellen10()
-time.sleep(1)
+time.sleep(1)                                       
 latitude()
 time.sleep(3)
 

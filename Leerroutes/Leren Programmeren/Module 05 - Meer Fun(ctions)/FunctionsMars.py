@@ -2,17 +2,6 @@ import time
 import sys
 from random import randint
 import random
-###################################################################################################################################################################################################################################
-###################################################################################################################################################################################################################################
-#                                                                                                         STORY
-######################################################################################################################################################################################################################################
-######################################################################################################################################################################################################################################
-
-
-
-
-
-
 #####################################################################################################################################################################################################################################
 #####################################################################################################################################################################################################################################
 #                                                                                   ALLE FUNCTIONS IN GAME DIE WORDEN AANGEROEPEN IN FUNCTIONS
@@ -31,8 +20,6 @@ def delay_input(string):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.02)
-
-
 ######################################################################################################################################################################################################################################
 #  lancering wwordt hier geactiveerd of geabort
 def launch ():
@@ -48,7 +35,6 @@ def launch ():
         print("Sorry, Dit begreep de computer niet, probeer het opnieuw.")
         aftellen10()
     print(lift_off)
-
 ######################################################################################################################################################################################################################################
 # hier wordt de eerste som gegevraagd
 def latitude():
@@ -57,8 +43,6 @@ def latitude():
   time.sleep(1)
   keuze_koers = input("Om de raket op juiste koers moeten we een kant op sturen! Kies tussen'Kies tussen Links/Rechts'")
   if keuze_koers == "links":
-    
-    
       print("De raket is in een juiste baan op weg naar Mars, blijf deze kant op gaan!")
       time.sleep(2)
       delay_print("Een enorme windstoot heeft de raket op een andere koers gebracht! Stuur zo snel mogelijk bij na het berekenen van de nieuwe koers!")
@@ -84,7 +68,6 @@ def latitude():
       noordlattitude = int(input (f'Het gegeven noordelattitude is: {noordlat} + het gegeven Oost lattitude {eastlat} is samen gecombineeerd?'))
 #########################################################################################################################################################################################################################################
 def komeetBattle():
-  from random import randint
       
   rots = 20
   while rots > 0:
@@ -151,7 +134,7 @@ def zuurstof():
           exit()
       else: 
           print("Sorry, Dit begreep de computer niet, probeer het opnieuw.")
-    
+
   else:
     print('''Ik heb mijn twijfels over de berekening.... maar we moeten het proberen.... !!!
     alle voorbereidingen zijn gedaan, iederen aanwezig op hun plaatsten en we wachten op de countdown.... via een buitencamera zien we de raket
