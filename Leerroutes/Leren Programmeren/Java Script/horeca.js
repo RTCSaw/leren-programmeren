@@ -15,14 +15,17 @@ while (loop) {
         console.log("dit ken ik niet... probeer iets anders")
     }
 };
-let totaal_bier = drank.bier.amount * drank.bier.price
-let totaal_wijn = drank.wijn.amount * drank.wijn.price
-let totaal_fris = drank.fris.amount * drank.fris.price
+function bonnetje(drank){
+    let totaal_bier = drank.bier.amount * drank.bier.price
+    let totaal_wijn = drank.wijn.amount * drank.wijn.price
+    let totaal_fris = drank.fris.amount * drank.fris.price
 
-let eindbedrag = Math.round(totaal_bier + totaal_wijn + totaal_fris)
-for (key in drank) {
-    console.log(drank[key])
-    document.getElementById("horeca").innerHTML += key + " " + drank[key].name + ": " + drank[key].amount + " x " + drank[key].price.toFixed(2) + " euro" + "<br>";
+    let eindbedrag = Math.round(totaal_bier + totaal_wijn + totaal_fris)
+    for (key in drank) {
+        console.log(drank[key])
+        document.getElementById("horeca").innerHTML += key + " " + drank[key].name + ": " + drank[key].amount + " x " + drank[key].price.toFixed(2) + " euro" + "<br>";
+    }
+    document.getElementById("button").style.visibility="hidden";
+    document.getElementById("horeca").innerHTML += "Eindbedrag: " + eindbedrag + " euro";
 
-  }
-document.getElementById("horeca").innerHTML += "Eindbedrag: " + eindbedrag + " euro";
+}
