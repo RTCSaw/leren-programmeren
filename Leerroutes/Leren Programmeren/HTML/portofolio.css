@@ -1,7 +1,45 @@
-.h1first{
-    background-color: rgb(175, 184, 223);
+body{
+    margin-left: 70px;
+}
+.bovenbalk{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.bovenbalk ul {
+
+    margin: 50;
+}
+.bovenbalk li {
+    display: inline-block;
+    margin-right: 70px;
+}
+    
+.bovenbalk li:last-child {
+    margin-right: 0;
+}
+    
+.bovenbalk a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+}
+.Overmij{
+    color: white;
+}
+.titel{
+    background-color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
 }
+.titelnaam{
+    color: white;
+}
+
 .h2first{
     color: white;
 }
@@ -11,7 +49,19 @@ body{
     background-size:cover;
 }
 .testfoto{
-    height: 250px;
+    height: auto;
     width: 300px;
     margin-left: 50px;
+}
+.h2second{
+    color: white;
+}
+.teksthobbies{
+    color: white;
+
+}
+.bodyWerk{
+    background-image: url("website-background.jpg");
+    background-repeat: no-repeat;
+    margin-left: 70px;
 }
