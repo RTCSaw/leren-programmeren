@@ -1,5 +1,8 @@
 body{
     margin-left: 70px;
+    background-image: url("website-background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .bovenbalk{
     background-color: black;
@@ -43,11 +46,7 @@ a:hover{
 .h2first{
     color: white;
 }
-body{
-    background-image: url("website-background.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-}
+
 .testfoto{
     height: auto;
     width: 300px;
@@ -60,8 +59,24 @@ body{
     color: white;
 
 }
-.bodyWerk{
-    background-image: url("website-background.jpg");
-    background-repeat: no-repeat;
-    margin-left: 70px;
+
+.CVfoto{
+    height: auto;
+    width: 600px;
+
 }
+.contact-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-line img {
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-line p {
+    font-size: 18px;
+    margin: 0;
+  }
