@@ -1,0 +1,17 @@
+.h1first{
+    background-color: rgb(175, 184, 223);
+    text-align: center;
+}
+.h2first{
+    color: white;
+}
+body{
+    background-image: url("website-background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.testfoto{
+    height: 250px;
+    width: 300px;
+    margin-left: 50px;
+}
