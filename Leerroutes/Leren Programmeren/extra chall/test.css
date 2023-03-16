@@ -1,3 +1,49 @@
+header {
+    background-color: #1c1c1c;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aangepast naar rechts uitlijnen */
+    max-width: 960px;
+    width: 100%;
+    padding: 0 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 2rem;
+  }
+  
+  nav ul li:last-of-type {
+    margin-right: 0;
+    font-size: 0.9rem; /* Aangepast naar kleiner lettertype */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  nav ul li a:last-of-type {
+    font-size: 0.9rem; /* Aangepast naar kleiner lettertype */
+  }
+  
+  
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -90,40 +136,36 @@ body {
   }
   .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem;
+    justify-content: space-around; /* Vakjes uit elkaar zetten */
+    align-items: center;
+    height: 400px; /* Hoogte container verhogen voor grotere vakjes */
   }
   
   .tile {
-    flex-basis: calc(33.33% - 2rem);
-    background-color: #fff;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: box-shadow 0.3s ease-in-out;
+    width: 30%; /* Breedte vakjes vergroten */
+    height: 80%; /* Hoogte vakjes vergroten */
+    background-color: #ccc; /* Grijze achtergrondkleur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   
   .tile:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Vergroten bij hover */
   }
   
   .tile a {
-    display: block;
-    color: #333;
     text-decoration: none;
+    color: #000;
   }
   
   .tile i {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    color: #1c1c1c;
+    font-size: 5rem;
   }
   
   .tile h2 {
-    margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 1rem;
   }
+  
