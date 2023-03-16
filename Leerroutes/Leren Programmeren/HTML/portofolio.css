@@ -1,5 +1,5 @@
 body{
-    margin-left: 70px;
+    text-align: center;
     background-image: url("website-background.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -7,7 +7,7 @@ body{
 .bovenbalk{
     background-color: black;
     color: white;
-    display: flex;
+    text-align: center;
     justify-content: space-between;
     padding: 10px;
 }
@@ -32,6 +32,7 @@ a:hover{
 }
 .Overmij{
     color: white;
+    
 }
 .titel{
     background-color: rgb(0, 0, 0);
@@ -79,3 +80,93 @@ a:hover{
     font-size: 18px;
     margin: 0;
   }
+  .tile {
+    width: 300px;
+    height: 300px;
+    background-color: lightgrey;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+  }
+.tile:hover{
+    transform: scale(1.1);
+
+}
+
+/* Stijlen voor de kopjes in de tegels */
+.tile h3 {
+    margin-top: 0;
+    
+}
+
+/* Stijlen voor de tekst in de tegels */
+.tile p {
+    margin-bottom: 0;
+}
+
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+
+.tussenbalk{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.contact-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-line:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-line img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .contact-line p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  /* zorgt voor tiles naast elkaar */
+.inline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10%;
+}
