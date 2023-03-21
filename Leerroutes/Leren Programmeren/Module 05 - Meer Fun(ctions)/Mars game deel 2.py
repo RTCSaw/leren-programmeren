@@ -38,14 +38,14 @@ print(komeet)
 delay_print ("""Dit is het stuk puin wat vanaf aarde is geobserveerd!
 Ga snel achter de cockpit zitten en schiet de brokstukken met de lazers kapot!""")
 
-komeetBattle() ##########################################################################################################
+komeetBattle()
 
 delay_print("""De rest van de reis lijkt rustig te verlopen, de mensen kijken rond via kleine raampjes naar buiten en zien de sterren. Sommige mensen hebben lol in de 0g kracht,
 andere lezen ondersteboven een boek. Iedereen is vrij en blij. In de ramen is ook de planeet Mars te zien. Elke dag komt hij een stukje dichterbij en kan je de rode planeet steeds beter zien.
 De grote kloven, bergen, oude rivierbedden en grote kale vlaktes...""") #verhaal
 kijken_uit_raam()
 time.sleep(3)
-Alien_battle()       #################################################################################################
+Alien_battle()  
 delay_print("De raket is zwaar beschadigd... we de raket vliegt op zijn laatste loodjes....")
 time.sleep(2)
 print(raket)

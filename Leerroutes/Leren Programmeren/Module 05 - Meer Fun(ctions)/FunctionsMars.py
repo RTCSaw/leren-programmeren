@@ -26,11 +26,11 @@ def launch ():
   while True: 
     lanceren = input("De raket is klaar om te lanceren! Als u de lancering wilt activeren kunt u dat doen doormiddell 'LAUNCH' ").lower()
     if lanceren == "launch": 
-        break
+        return lanceren
     elif lanceren == "abort":
         print("De missie om de laatste mensen te redden if afgelast... iedereen zijn vrijheid zal worden ingenomen...")
         print (game_over)
-        exit()
+        return lanceren
     else: 
         print("Sorry, Dit begreep de computer niet, probeer het opnieuw.")
         aftellen10()
@@ -98,7 +98,7 @@ def Alien_battle():
       time.sleep(0.7)
       print("De aliens schieten terug, ZET JE SCHRAP!!!")
       time.sleep(1)
-      print(f"De raket heeft nog ongeveer {raket_leven} hp over")
+      print(f"De raket heeft nog ongeveer {raket_leven} hp over") 
       if alien_leven <= 0:
         print("Je hebt de aliens een lesje geleerd!! We kunnen gelukkig veilig door!") 
       if raket_leven <= 0:
@@ -151,7 +151,7 @@ def aftellen10():
   print("liftoff")
 #########################################################################################################################################################################################################################################
 def aftellenkort():
-  x = 11
+  x = 3
   while x >0:
     x= x-1
     time.sleep(1)
