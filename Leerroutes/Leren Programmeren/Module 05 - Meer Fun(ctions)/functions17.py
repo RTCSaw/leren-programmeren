@@ -17,8 +17,18 @@ def platinum2gold(amount:int) -> float:
     return amount * 25
 
 def getPersonCashInGold(personCash:dict) -> float:
-    totaal_goud = copper2gold + silver2gold + platinum2gold + personCash["cash"["gold"]]
-    return totaal_goud
+    totaal_goud = 0.0
+    for coins in personCash:
+        s2g = personCash['silver']
+        silver2gold(s2g)
+        c2g = personCash['copper']
+        copper2gold(c2g)
+        p2g = personCash['platinum']
+        platinum2gold(p2g)
+        gold = personCash['gold']
+        totaal_goud =  platinum2gold(p2g) + silver2gold(s2g) + copper2gold(c2g) + gold
+        return totaal_goud
+    pass
 ##################### M04.D02.O4 #####################
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
