@@ -16,30 +16,29 @@ def silver2gold(amount:int) -> float:
     return amount/5
 
 def copper2gold(amount:int) -> float:
-    return amount/ 50
+    #return amount/ 50
+    return silver2gold (copper2silver(amount))
 
 def platinum2gold(amount:int) -> float:
     return amount * 25
 
 def getPersonCashInGold(personCash:dict) -> float:
-    totaal_goud = 0.0
-    for coins in personCash:
-        s2g = personCash['silver']
-        silver2gold(s2g)
-        c2g = personCash['copper']
-        copper2gold(c2g)
-        p2g = personCash['platinum']
-        platinum2gold(p2g)
-        gold = personCash['gold']
-        totaal_goud =  platinum2gold(p2g) + silver2gold(s2g) + copper2gold(c2g) + gold
-        return totaal_goud
+    s2g = personCash['silver']
+    silver2gold(s2g)
+    c2g = personCash['copper']
+    copper2gold(c2g)
+    p2g = personCash['platinum']
+    platinum2gold(p2g)
+    gold = personCash['gold']
+    totaal_goud =  platinum2gold(p2g) + silver2gold(s2g) + copper2gold(c2g) + gold
+    return totaal_goud
     
 ##################### M04.D02.O4 #####################
 
 def getJourneyFoodCostsInGold(people:int, horses:int) -> float:
     kosten_in_koper = ((COST_FOOD_HORSE_COPPER_PER_DAY * horses) + (COST_FOOD_HUMAN_COPPER_PER_DAY * people)) * JOURNEY_IN_DAYS
     kosten_in_goud = copper2gold(kosten_in_koper)
-    return kosten_in_goud  
+    return round(copper2gold (kosten_in_goud),2 )
 ##################### M04.D02.O5 #####################
 
 def getFromListByKeyIs(list:list, key:str, value:any) -> list:
@@ -70,9 +69,9 @@ def getNumberOfTentsNeeded(people:int) -> int:
     return aantal_tenten
 
 def getTotalRentalCost(horses:int, tents:int) -> float:
-    total_cost_hores = horses * COST_HORSE_SILVER_PER_DAY * JOURNEY_IN_DAYS
+    total_cost_horses = horses * COST_HORSE_SILVER_PER_DAY * JOURNEY_IN_DAYS
     total_cost_tents = tents * COST_TENT_GOLD_PER_WEEK * math.ceil(JOURNEY_IN_DAYS / 7)
-    return silver2gold(total_cost_hores )+total_cost_tents
+    return silver2gold(total_cost_horses )+total_cost_tents
 
 ##################### M04.D02.O7 #####################
 
@@ -82,10 +81,7 @@ def getItemsAsText(items:list) -> str:
         itemtxt = f"{item['amount']}{item['unit']} {item['name']}"
         spullen.append(itemtxt)
     
-
     return ", ".join(spullen)
-
-        
 
 def getItemsValueInGold(items:list) -> float:
     totaal_goud = 0 
@@ -95,6 +91,8 @@ def getItemsValueInGold(items:list) -> float:
             
         elif item['price']['type']=='silver':
             totaal_goud += silver2gold(item['price']['amount']*item['amount'])
+
+
 
         elif item['price']['type']=='platinum':
             totaal_goud += platinum2gold(item['price']['amount']*item['amount'])
