@@ -92,8 +92,6 @@ def getItemsValueInGold(items:list) -> float:
         elif item['price']['type']=='silver':
             totaal_goud += silver2gold(item['price']['amount']*item['amount'])
 
-
-
         elif item['price']['type']=='platinum':
             totaal_goud += platinum2gold(item['price']['amount']*item['amount'])
         
@@ -104,8 +102,13 @@ def getItemsValueInGold(items:list) -> float:
 ##################### M04.D02.O8 #####################
 
 def getCashInGoldFromPeople(people:list) -> float:
-    pass
-
+    totalGold = 0
+    for cash in people:
+        totalGold += copper2gold(cash['cash']['copper'])
+        totalGold += silver2gold(cash['cash']['silver'])
+        totalGold += cash['cash']['gold']
+        totalGold += platinum2gold(cash['cash']['platinum'])
+    return round(totalGold, 2)
 ##################### M04.D02.O9 #####################
 
 def getInterestingInvestors(investors:list) -> list:

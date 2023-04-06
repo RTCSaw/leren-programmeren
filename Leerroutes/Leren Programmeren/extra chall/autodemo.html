@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Top Secret Stamp";
+            src: url("Top Secret Stamp.ttf");
+        }
+        *{
+            font-family: "Top Secret Stamp";
+        
+        }
+        button{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            color: white;
+        }
+        button:hover{
+            background-color: red;
+            text-decoration: underline;
+
+        }
+        button.hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>welkom</h1>
+    <script>
+        function clicked(event){
+            let button = event.target
+            btn.aantal_clicks ++;
+            if (btn.aantal_clicks==1){
+            let h1 = document.querySelector('h1')
+            h1.innerText= 'Welkom Sam'
+        }else{
+            button.classList.add('hidden')
+        }
+        }
+        var btn = document.createElement('button')
+        document.body.appendChild(btn)
+        btn.innerText = 'knop1'
+        btn.onclick = clicked;
+        btn.aantal_clicks = 0
+    </script>
+</body>
+</html>
