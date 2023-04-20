@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="auto.php" method="get" id = "auto">
+    <p>
+        <label for="merk">merk:</label>
+        <input type="text"name="merk"id="merk">
+
+    </p>
+    <form action="auto.php"method="get">
+    <p>
+        <label for="bouwjaar">bouwjaar:</label>
+        <input type="text"name="bouwjaar"id="bouwjaar">
+
+    </p>
+    <form action="auto.php"method="get">
+        <p>
+            <label for="kenteken">kenteken:</label>
+            <input type="text"name="kenteken"id="kenteken">
+    
+    </p>
+    <form action="auto.php"method="get">
+        <p>
+            <label for="auto">auto:</label>
+            <input type="text"name="auto"id="auto">
+        
+        <input type="submit" value="Opslaan">
+    
+        </p>
+
+    </form>
+    <script>
+    form = doccument.getElementById('cars');
+    function handleResponse(event){
+        alert(event.response);
+    }
+    function submitCar(event){
+        event.preventDefault();
+        let fromData = new formData(this);
+        console.dir(formData);
+        let xhr = new XMLHttpRequest();
+        xhr.open('post','auto.php');
+        xhr.onload = handleResponse;
+        xhr.sent(fromData);
+        
+    }
+    form.onsubmit = submitCar;
+</script>
+</body>
+</html>
