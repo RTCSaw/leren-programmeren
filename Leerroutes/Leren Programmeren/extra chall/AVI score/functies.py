@@ -1,3 +1,4 @@
+import math
 EASY_TEXT = """Ik hou van programmeren. Programmeren is leuk. 
 Ik kan veel dingen maken met programmeren. Ik kan een website maken. 
 Ik kan een spel maken. Ik kan een chatbot maken. 
@@ -32,7 +33,6 @@ def getFileContentAsString(textFile: str) -> str:
 
 # opdracht 1
 def getNumberOfCharacters(text: str) -> int:
-    # tekst = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-'
     lengte = len(text)
     return lengte
 # opdracht 2
@@ -50,7 +50,7 @@ def getNumberOfWords(text: str) -> int:
 def aviScore(text: str)-> int:   
     woorden = getNumberOfWords(text)
     zinnen = getNumberOfSentences(text)
-    score = woorden/zinnen
+    score = math.floor(woorden/zinnen)
 
     if score <= 7:
         return 5
