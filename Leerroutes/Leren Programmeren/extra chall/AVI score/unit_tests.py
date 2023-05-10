@@ -1,7 +1,7 @@
 from functies import *
 
 # test 1: getNumberOfCharacters
-if getNumberOfCharacters('aap') == 3:
+if getNumberOfCharacters('aap!?') == 3:
     print("Test geslaagd")
 else:
     print("Deze test is niet geslaagd")
