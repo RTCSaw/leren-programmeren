@@ -1,0 +1,16 @@
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+#groet {
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+}
+.achtergrondoct{
+    background-image: url(evening.png);
+}
+.achtergrondmid{
+    background-image: url(afternoon.png);
+}
