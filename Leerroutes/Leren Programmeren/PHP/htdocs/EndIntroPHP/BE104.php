@@ -1,3 +1,26 @@
+<?php
+            $huidigUur = date('H');
+        
+            if($huidigUur > 18){
+                $hallo = 'Goede avond';
+                $achtergrond = 'evening';
+                
+            }
+            elseif($huidigUur > 12){
+                $hallo = 'Goede middag';
+                $achtergrond = 'afternoon';
+                
+            }
+            elseif($huidigUur > 6){
+                $hallo = 'Goede avond';
+                $achtergrond = 'morning';
+            }
+            else{
+                $hallo = 'Goede Nacht';
+                $achtergrond= 'night';
+            }
+            ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,34 +30,11 @@
     <title>Eindopdracht van de intro</title>
     <link rel="stylesheet" href="BE104.css">
 </head>
-<body>
-    <div id="Hallo">
-        <?php
-            $huidigUur = date('H');
-            $hallo = '';
-            $achtergrond = '';
+<body class= "<?php echo $achtergrond;?>">
+    <h1><?php echo $hallo; ?></h1>
+    <h1> Het is nu <?php echo date("H:i"); ?> </h1>
+            
 
-            if($huidigUur >= 6 && 12){
-                $hallo = 'Goede morgen';
-                $achtergrond = 'moring.png';
-                
-            }
-            elseif($huidigUur>=12 && 18){
-                $hallo = 'Goede middag';
-                $achtergrond = 'afternoon.png';
-                
-            }
-            elseif($huidigUur >=18 && 00){
-                $hallo = 'Goede avond';
-                $achtergrond = 'evening.png';
-            }
-            else{
-                $hallo = 'Goede Nacht';
-                $achtergrond= 'night.png';
-            }
-            echo '<h1>'.$hallo . '<h1>';
-            echo '<p> Het is nu ' . date('H:i') . '</p>';
-            ?>
     </div>
 </body>
 </html>

@@ -1,16 +1,16 @@
-body {
-    background-size: cover;
-    background-position: center;
+
+.evening{
+    background-image: url("evening.png");
+}
+.afternoon{
+    background-image: url("afternoon.png");
+}
+.morning{
+    background-image: url("morning.png");
+}
+.night{
+    background-image: url("night.png");
 }
 
-#groet {
-    text-align: center;
-    padding-top: 100px;
-    color: #fff;
-}
-.achtergrondoct{
-    background-image: url(evening.png);
-}
-.achtergrondmid{
-    background-image: url(afternoon.png);
-}
+
+
