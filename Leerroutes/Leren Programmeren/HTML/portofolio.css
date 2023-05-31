@@ -1,8 +1,11 @@
+/* css voor hoofdpagina */
 body{
     text-align: center;
     background-image: url("website-background.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    font-family: monospace;
+
 }
 .bovenbalk{
     background-color: black;
@@ -32,6 +35,8 @@ a:hover{
 }
 .Overmij{
     color: white;
+    font-family: monospace;
+
     
 }
 .titel{
@@ -46,6 +51,10 @@ a:hover{
 .h2first{
     color: white;
 }
+.tekstopld{
+
+    font-family: monospace;
+}
 
 .testfoto{
     height: auto;
@@ -54,25 +63,26 @@ a:hover{
 }
 .h2second{
     color: white;
+    font-family: monospace;
+
 }
 .teksthobbies{
     color: white;
+    font-family: monospace;
+
 
 }
 
-.CVfoto{
-    height: auto;
-    width: 600px;
-
-}
 .contact-line {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    font-family: monospace;
+
   }
   
   .contact-line img {
-    height: 24px;
+    height: auto;
     margin-right: 10px;
   }
   
@@ -80,6 +90,7 @@ a:hover{
     font-size: 18px;
     margin: 0;
   }
+  /* tegels werk ervaring */
   .tile {
     width: 300px;
     height: 300px;
@@ -134,14 +145,16 @@ footer {
     text-align: center;
     justify-content: space-between;
     padding: 10px;
+    font-family: monospace;
+
     
 }
 .contact-line {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     background-color: #ccc;
     margin: 10px;
     border-radius: 5px;
@@ -158,9 +171,8 @@ footer {
   }
   
   .contact-line p {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
+    font-size: auto;
+    text-size-adjust: auto;
   }
   /* zorgt voor tiles naast elkaar */
 .inline{
